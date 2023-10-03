@@ -15,11 +15,41 @@
 
 .row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
   height: 50%;
   background-color: brown;
+}
+
+.first-row {
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.second-row {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.list {
+  list-style: none;
+}
+.list .list-item {
+  background-color: lightcoral;
+}
+.list .button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.list-item-text {
+  flex-grow: 1;
+}
+.list .button > * {
+  background-color: cornflowerblue;
 }
 
 .col {
