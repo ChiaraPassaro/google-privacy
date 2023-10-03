@@ -8,20 +8,20 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  height: 400px;
-  padding: 1rem;
-  background-color: aquamarine;
+  margin: 1rem;
+  border: 1px solid #6d6b6b;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .row {
   display: flex;
-  height: 50%;
-  background-color: brown;
 }
 
 .first-row {
   justify-content: space-between;
   gap: 0.5rem;
+  padding: 1rem;
 }
 
 .second-row {
@@ -31,9 +31,7 @@
 .list {
   list-style: none;
 }
-.list .list-item {
-  background-color: lightcoral;
-}
+
 .list .button {
   display: flex;
   align-items: center;
@@ -41,31 +39,37 @@
   width: 100%;
   padding: 1rem;
   border: none;
+  background-color: transparent;
   text-align: left;
   cursor: pointer;
 }
 
-.list-item-text {
+.list .button:hover,
+.list .button:active,
+.list .button:focus {
+  background-color: lightgray;
+}
+.list .list-item-text {
   flex-grow: 1;
 }
 
-.list-item-status {
+.list .list-item-status {
   display: flex;
   align-items: center;
   gap: 0.2rem;
+}
+
+.list i {
+  font-size: 1.5rem;
 }
 
 /* .list .button > * {
   background-color: cornflowerblue;
 } */
 
-.col {
-  background-color: purple;
-}
 .col-first {
   /* flex-grow: 1; */
   width: 80%;
-  background-color: azure;
 }
 
 .col img {
